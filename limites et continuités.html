@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Limites et Continuité</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.7;
+      background-color: #f8f8f8;
+      padding: 30px;
+      color: #2c3e50;
+    }
+
+    h1, h2 {
+      color: #1e90ff;
+    }
+
+    .section {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    .example {
+      background-color: #e7f3ff;
+      border-left: 5px solid #1e90ff;
+      padding: 10px;
+      margin: 15px 0;
+    }
+
+    .exercise {
+      background-color: #fefae0;
+      border-left: 5px solid #e1c542;
+      padding: 10px;
+      margin: 15px 0;
+    }
+
+    .flashcard {
+      background-color: #ffffff;
+      border: 2px solid #1e90ff;
+      border-radius: 12px;
+      padding: 20px;
+      width: 400px;
+      margin: 20px auto;
+      cursor: pointer;
+      text-align: center;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    .flashcard .answer {
+      display: none;
+      margin-top: 15px;
+      color: #16a085;
+      font-style: italic;
+    }
+
+    .flashcard:hover {
+      background-color: #f0f8ff;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📘 Généralités sur les limites et continuité</h1>
+
+  <div class="section">
+    <h2>🔹 Définition de la limite</h2>
+    <p>On dit que la limite de f(x) quand x tend vers a est L, si on peut rendre f(x) aussi proche que l’on veut de L quand x est suffisamment proche de a.</p>
+    <div class="example">
+      Exemple : <br>
+      lim(x→2) (3x + 1) = 7
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🔹 Limites infinies et limites à l'infini</h2>
+    <p>Si la valeur de f(x) devient infiniment grande quand x s'approche de a, alors on écrit :<br>
+    lim(x→a) f(x) = ∞ ou -∞</p>
+    <div class="example">
+      Exemple :<br>
+      lim(x→0⁺) 1/x = +∞
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🔹 Continuité d'une fonction</h2>
+    <p>Une fonction f est continue en un point a si :</p>
+    <ul>
+      <li>f(a) est défini</li>
+      <li>lim(x→a) f(x) existe</li>
+      <li>lim(x→a) f(x) = f(a)</li>
+    </ul>
+    <div class="example">
+      Exemple :<br>
+      f(x) = x² est continue en tout x ∈ ℝ
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>✏ Exercices</h2>
+
+    <div class="exercise">
+      1) Calculer : lim(x→3) (x² - 9) / (x - 3)
+    </div>
+
+    <div class="exercise">
+      2) Étudier la continuité de f(x) = (x² - 1)/(x - 1)
+    </div>
+
+    <div class="exercise">
+      3) Déterminer lim(x→0) (sin x) / x
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🃏 Flashcards - Limites</h2>
+
+    <div class="flashcard" onclick="this.querySelector('.answer').style.display = this.querySelector('.answer').style.display === 'block' ? 'none' : 'block'">
+      <strong>lim(x→0) (sin x)/x = ?</strong>
+      <div class="answer">1</div>
+    </div>
+
+    <div class="flashcard" onclick="this.querySelector('.answer').style.display = this.querySelector('.answer').style.display === 'block' ? 'none' : 'block'">
+      <strong>Conditions de continuité en un point a ?</strong>
+      <div class="answer">
+        f(a) existe, lim(x→a) f(x) existe, et lim(x→a) f(x) = f(a)
+      </div>
+    </div>
+
+    <div class="flashcard" onclick="this.querySelector('.answer').style.display = this.querySelector('.answer').style.display === 'block' ? 'none' : 'block'">
+      <strong>lim(x→+∞) (1/x) = ?</strong>
+      <div class="answer">0</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
